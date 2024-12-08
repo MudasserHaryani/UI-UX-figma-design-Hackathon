@@ -14,7 +14,7 @@ export default function Blog() {
         <div className="flex flex-col lg:flex-row gap-8">
           <main className="lg:w-[60%] space-y-8">
             <article className="bg-white rounded-lg  overflow-hidden">
-              <img
+              <Image
                 src="/blog/blg1.png"
                 alt="Laptop and notepad on wooden desk"
                 className="w-full h-70 object-cover"
@@ -45,7 +45,7 @@ export default function Blog() {
             </article>
 
             <article className="bg-white rounded-lg overflow-hidden">
-              <img
+              <Image
                 src="/blog/blg2.png"
                 alt="Person writing on paper"
                 className="w-full h-70 object-cover"
@@ -78,7 +78,7 @@ export default function Blog() {
             </article>
 
             <article className="bg-white rounded-lg  overflow-hidden">
-              <img
+              <Image
                 src="/blog/blg3.png"
                 alt="Coffee and laptop on desk"
                 className="w-full h-70 object-cover"
@@ -151,7 +151,7 @@ export default function Blog() {
               <h3 className="font-bold text-lg mb-4">Recent Posts</h3>
               <div className="space-y-4">
                 <a className="flex gap-4 hover:bg-gray-50">
-                  <img
+                  <Image
                     src="/blog/blg5 (1).png"
                     alt="Laptop and notepad"
                     className="w-[60px] h-[60px] object-cover rounded"
@@ -165,7 +165,7 @@ export default function Blog() {
                 </a>
 
                 <a className="flex gap-4 hover:bg-gray-50">
-                  <img
+                  <Image
                     src="/blog/blg5 (2).png"
                     alt="Person writing"
                     className="w-[60px] h-[60px] object-cover rounded"
@@ -179,7 +179,7 @@ export default function Blog() {
                 </a>
 
                 <a className="flex gap-4 hover:bg-gray-50">
-                  <img
+                  <Image
                     src="/blog/blg5 (3).png"
                     alt="Modern office"
                     className="w-[60px] h-[60px] object-cover rounded"
@@ -191,7 +191,7 @@ export default function Blog() {
                 </a>
 
                 <a className="flex gap-4 hover:bg-gray-50">
-                  <img
+                  <Image
                     src="/blog/blg5 (5).png"
                     alt="Coffee and laptop"
                     className="w-[60px] h-[60px] object-cover rounded"
@@ -203,7 +203,7 @@ export default function Blog() {
                 </a>
 
                 <a className="flex gap-4 hover:bg-gray-50">
-                  <img
+                  <Image
                     src="/blog/blg5 (4).png"
                     alt="Coffee and laptop"
                     className="w-[60px] h-[60px] object-cover rounded"
