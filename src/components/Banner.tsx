@@ -1,6 +1,7 @@
 import React from "react";
 import Image from "next/image";
 import { FaAngleRight } from "react-icons/fa";
+import background from '../../public/banners/heroShop.png' 
 
 interface IBannerProp {
     title: string;
@@ -38,7 +39,7 @@ const Banner = (Props: IBannerProp) => {
 
         {/* Background Image  */}
         <div className="absolute inset-0 z-0">
-            <Image src='/banners/heroshop.png' alt="background" layout="fill" objectFit="cover" className="pointer-events-none opacity-50"/>
+            <Image src={background} alt="background" layout="fill" objectFit="cover" className="pointer-events-none opacity-50"/>
         </div>
       </div>
     </div>
