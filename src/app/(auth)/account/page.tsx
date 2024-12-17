@@ -1,18 +1,20 @@
 import Image from "next/image";
 import React from "react";
-import banner from '../../../../public/banners/account.png'
 import ShopBar2 from "@/components/ShopBar2";
+import Banner from "@/components/Banner";
+
 export default function MyAccount() {
   return (
-<>
-<div>
-<Image src={banner} alt='Banner' width={1920} className="pt-[100px]"/>
-</div>
-<main className="min-h-screen w-full bg-[#ffffff] text-black flex flex-col md:flex-row">
+    <>
+      <div className="h-auto">
+        <Banner title="Account" page1="Home" page2="Account" />
+      </div>
+      <main className="min-h-screen w-full bg-[#ffffff] text-black flex flex-col md:flex-row">
         {/* Login Column */}
         <div className="w-full md:w-1/2 max-w-lg mx-auto p-8 md:p-16">
-          <h1 className="text-4xl font-bold mb-8">Log In</h1>
-
+          <h1 className="text-4xl font-bold mb-8 text-center md:text-left">
+            Log In
+          </h1>
           <form className="space-y-6">
             <div>
               <label htmlFor="username" className="block mb-2">
@@ -24,7 +26,6 @@ export default function MyAccount() {
                 className="w-full px-4 py-2 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-gray-200"
               />
             </div>
-
             <div>
               <label htmlFor="password" className="block mb-2">
                 Password
@@ -35,7 +36,6 @@ export default function MyAccount() {
                 className="w-full px-4 py-2 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-gray-200"
               />
             </div>
-
             <div className="flex items-center">
               <input
                 type="checkbox"
@@ -46,8 +46,7 @@ export default function MyAccount() {
                 Remember me
               </label>
             </div>
-
-            <div className="flex items-center space-x-4">
+            <div className="flex flex-wrap items-center space-x-4">
               <button
                 type="submit"
                 className="px-8 py-2 border border-black rounded-lg hover:bg-gray-100"
@@ -61,8 +60,9 @@ export default function MyAccount() {
 
         {/* Register Column */}
         <div className="w-full md:w-1/2 max-w-lg mx-auto p-8 md:p-16 bg-[#ffffff]">
-          <h1 className="text-4xl font-bold mb-8">Register</h1>
-
+          <h1 className="text-4xl font-bold mb-8 text-center md:text-left">
+            Register
+          </h1>
           <form className="space-y-6">
             <div>
               <label htmlFor="email" className="block mb-2">
@@ -74,18 +74,15 @@ export default function MyAccount() {
                 className="w-full px-4 py-2 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-gray-200"
               />
             </div>
-
             <p className="text-gray-600">
               A link to set a new password will be sent to your email address.
             </p>
-
-            <p className="text-gray-600">
+            <p className="text-gray-600 text-justify">
               Your personal data will be used to support your experience
-              throughout this website, to manage access to your account, and for
-              other purposes described in our{" "}
+              throughout this website, to manage access to your account, and
+              for other purposes described in our{" "}
               <a className="underline hover:text-black">privacy policy</a>.
             </p>
-
             <button
               type="submit"
               className="px-8 py-2 border border-black rounded-lg hover:bg-gray-100"
@@ -95,7 +92,7 @@ export default function MyAccount() {
           </form>
         </div>
       </main>
-      <ShopBar2/>
-</>
+      <ShopBar2 />
+    </>
   );
 }

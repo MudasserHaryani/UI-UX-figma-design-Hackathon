@@ -1,21 +1,18 @@
-import Image from "next/image";
-import banner from "../../../../public/banners/contact.png";
 import ShopBar2 from "@/components/ShopBar2";
 import { HiLocationMarker } from "react-icons/hi";
 import { FaPhone } from "react-icons/fa6";
 import { IoIosTime } from "react-icons/io";
+import Banner from "@/components/Banner";
 
 const ShopPage = () => {
   return (
     <div className="w-full h-auto bg-[#FFFFFF] poppins">
       <div>
-        <Image
-          src={banner}
-          alt="banner"
-          width={1440}
-          height={500}
-          className="max-w-full h-[250px] md:h-auto pt-20"
-        />
+        <Banner 
+        title="Contact"
+        page1="Home"
+        page2="Contact"/>
+       
       </div>
       <div className="poppins w-full flex flex-col justify-center items-center my-10">
         <h1 className="font-semibold text-4xl leading-[54px] ">

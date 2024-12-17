@@ -1,13 +1,15 @@
-import Image from "next/image";
-import banner from '../../../../public/banners/checkout.png'
 import { FaAngleDown } from "react-icons/fa";
 import React from "react";
+import Banner from "@/components/Banner";
 
 export default function Checkout() {
   return (
    <>
    <div>
-<Image src={banner} alt='Banner' width={1920} className="pt-[100px]"/>
+   <Banner 
+        title="Checkout"
+        page1="Home"
+        page2="Checkout"/>
 </div>
    <div className="max-w-7xl text-black bg-[#ffffff] mx-auto px-4 py-8 md:px-6 lg:px-8">
         <div className="flex flex-col lg:flex-row gap-8">

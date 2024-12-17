@@ -1,20 +1,17 @@
-import Image from "next/image";
-import shop from "../../../../public/banners/shop.png";
 import ShopBar from "@/components/ShopBar";
 import ShopProducts from "@/components/ShopProducts";
 import ShopBar2 from "@/components/ShopBar2";
+import Banner from "@/components/Banner";
 
 const ShopPage = () => {
   return (
     <div className="w-full h-auto bg-white poppins">
       <div>
-        <Image
-          src={shop}
-          alt="shop"
-          width={1440}
-          height={500}
-          className="max-w-full h-[250px] md:h-auto pt-20"
-        />
+        <Banner 
+        title="Shop"
+        page1="Home"
+        page2="Shop"/>
+       
       </div>
       <ShopBar />
       <ShopProducts />

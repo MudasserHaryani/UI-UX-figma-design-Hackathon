@@ -1,13 +1,15 @@
 import Image from "next/image";
-import banner from '../../../../public/banners/blog.png'
-
 import React from "react";
 import { IoSearch } from "react-icons/io5";
+import Banner from "@/components/Banner";
 export default function Blog() {
   return (
     <div className="bg-white min-h-screen">
      <div className="pt-[100px] h-auto">
-        <Image src={banner} alt="banner"/>
+     <Banner 
+        title="Blog"
+        page1="Home"
+        page2="Blog"/>
      </div>
 
       <div className="container text-black mx-auto px-8 py-8">

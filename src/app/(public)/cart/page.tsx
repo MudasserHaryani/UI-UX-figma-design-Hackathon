@@ -2,14 +2,16 @@ import Image from "next/image";
 import React from "react";
 import { FaTrash } from "react-icons/fa";
 import Link from "next/link";
-import sofa from '../../../../public/products/14.png'
-import cart from '../../../../public/banners/cart.png'
+import sofa from "../../../../public/products/14.png";
+import cart from "../../../../public/banners/cart.png";
 import ShopBar2 from "@/components/ShopBar2";
+import Banner from "@/components/Banner";
 export default function Cart() {
   return (
     <div>
-    <Image src={cart} alt="Cart" className="w-full h-auto pt-[100px]"/>
-    <main className=" text-black bg-[#ffffff] p-4 md:p-8 mb-16">
+      <Banner title="Cart" page1="Home" page2="Cart" />
+
+      <main className=" text-black bg-[#ffffff] p-4 md:p-8 mb-16">
         <div className="mx-auto max-w-7xl">
           <div className="grid grid-cols-1 gap-8 lg:grid-cols-3 ">
             {/* Product List Section */}
@@ -103,7 +105,7 @@ export default function Cart() {
           </div>
         </div>
       </main>
-      <ShopBar2/>
-      </div>
+      <ShopBar2 />
+    </div>
   );
 }
