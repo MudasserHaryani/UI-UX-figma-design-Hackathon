@@ -42,7 +42,7 @@ const Hero3 = () => {
               suspension, floor, and table lights.
             </p>
           </div>
-          <div className="flex flex-col bg-gray-500 md:flex-row justify-center gap-5 mt-5">
+          <div className="flex flex-col md:flex-row justify-center gap-5 mt-5">
             {topPicks.map((elem) => (
               <Card
                 key={elem.id}
